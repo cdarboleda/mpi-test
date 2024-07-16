@@ -3,5 +3,9 @@ sudo apt-get update
 sudo apt-get install libopenmpi-dev
 
 mpicxx main.cpp -o main
+mpicxx main2.cpp -o main2
+mpicxx mainPrintf.cpp -o mainPrintf
 
 mpiexec -n 4 ./main
+mpiexec -n 4 ./main2
+mpiexec -n 4 ./mainPrintf
